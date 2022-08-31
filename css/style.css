@@ -1,0 +1,123 @@
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 80px;
+	font-size: 14px;
+	line-height: 1.8;
+	background-color: #ffffff;
+	min-height: 100%;
+	color: #000000;
+}
+
+.navbar {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	/* border-bottom: 2px solid #f0f0f0; */
+	font-weight: 1000;
+}
+
+
+.bg-light {
+	/* navbar border 색을 흰색으로 변경 */
+    border-color: #ffffff;
+}
+
+.nav.a.active {
+	display:block;
+	/* width:70px; underbar width for menu */
+	content: '';
+	border-bottom: solid 3px tomato;
+	transform: scaleX(1);
+}
+
+.menu a:after {
+	display:block;/*a요소를 블록 요소라고 선언*/
+	/* width:70px; underbar width for menu */
+	content: '';/*comtent안은 밑줄 디자인을 위해 비워두세요.*/
+	border-bottom: solid 3px tomato;
+	transform: scaleX(0);/*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+	transition: transform 0.3s ease-in-out; /*변형 방식*/
+}
+.menu a.active:after {
+   transform: scaleX(1);/*a 속성에 hover시 after를 기존 크기로 변경*/
+}
+
+
+
+.bs-docs-section {
+	margin-top: 20px;
+}
+
+a.navbar-brand {
+	/* font-family: 'Permanent Marker', cursive; */
+	font-size: 24px;
+	font-weight: 1000;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+a.nav-link.active {
+	font-weight: 1000;
+}
+
+p {
+	text-align: justify;
+}
+
+h5 {
+	font-weight: 800;
+}
+
+.container {
+	max-width: 1024px;
+}
+
+.table th,
+.table td {
+	border-color: #ffffff;
+}
+.table thead th {
+	border-bottom: #ffffff;
+}
+
+.research_image {
+	width: 215px;
+	height: 160px;
+	border: 1px;
+	border-radius: 5px;
+}
+
+.member-image {
+	width: 100%;
+	border: 1px;
+	border-radius: 5px;
+}
+
+.portfolio_image {
+	width: 215px;
+	height: 160px;
+	border: 1px;
+	border-radius: 0px;
+}
+
+em > span {
+	border: 1px;
+	border-bottom-style: dotted;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	height: 60px;
+	width: 100%;
+	font-size: 14px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	background-color:#fcfcfc;
+	border-top: 1px solid #e0e0e0;
+}
