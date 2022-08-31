@@ -2,10 +2,10 @@
 
 Creator
 -------
-Sangkeun Park (@khu.ac.kr)
+Sangkeun Park (sk.park@khu.ac.kr)
 
 
-Built With
+Built using
 ----------
 * [bootstrap](https://getbootstrap.com)
 * [bootstrap-simplex](https://bootswatch.com)
