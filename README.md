@@ -1,8 +1,8 @@
-# pskalyber.github.io
+# skpark-khu.github.io
 
 Creator
 -------
-Sangkeun Park (sk.park@kaist.ac.kr)
+Sangkeun Park (@khu.ac.kr)
 
 
 Built With
