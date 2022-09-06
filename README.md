@@ -2,7 +2,7 @@
 
 Creator
 -------
-Sangkeun Park (sk.park /a/ khu.ac.kr)
+Sangkeun Park (sk.park (a) khu.ac.kr)
 
 
 Built using
