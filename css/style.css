@@ -121,3 +121,17 @@ em > span {
 	background-color:#fcfcfc;
 	border-top: 1px solid #e0e0e0;
 }
+
+.card:hover{
+    /* box-shadow: 8px 8px 8px black; */
+    background-color: #f3f3f3;
+    transform:scale(1.0);
+}
+
+.card {
+	border: 0px;
+}
+
+.card-body {
+	padding: 1rem /* 1.25 rem to 1 rem*/
+}
