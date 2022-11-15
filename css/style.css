@@ -122,10 +122,15 @@ em > span {
 	border-top: 1px solid #e0e0e0;
 }
 
-.card:hover{
+.card-body:hover{
     /* box-shadow: 8px 8px 8px black; */
     background-color: #f3f3f3;
     transform:scale(1.0);
+}
+
+.research_area>div.card>.card-body {
+	box-shadow: 0 0 20px 0 rgba(100, 100, 100, 0.26);
+	margin: 5px 3px 5px 3px;
 }
 
 .card {
@@ -133,5 +138,9 @@ em > span {
 }
 
 .card-body {
-	padding: 1rem /* 1.25 rem to 1 rem*/
+	padding: 1rem; /* 1.25 rem to 1 rem*/
+}
+
+.card-body>p {
+	text-align: left;
 }
