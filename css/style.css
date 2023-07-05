@@ -1,4 +1,3 @@
-
 html {
 	height: 100%;
 }
@@ -23,7 +22,7 @@ body {
 
 
 .bg-light {
-	/* navbar border »öÀ» Èò»öÀ¸·Î º¯°æ */
+	/* navbar border ìƒ‰ì„ í°ìƒ‰ìœ¼ë¡œ ë³€ê²½ */
     border-color: #ffffff;
 }
 
@@ -36,15 +35,15 @@ body {
 }
 
 .menu a:after {
-	display:block;/*a¿ä¼Ò¸¦ ºí·Ï ¿ä¼Ò¶ó°í ¼±¾ð*/
+	display:block;/*aìš”ì†Œë¥¼ ë¸”ë¡ ìš”ì†Œë¼ê³  ì„ ì–¸*/
 	/* width:70px; underbar width for menu */
-	content: '';/*comtent¾ÈÀº ¹ØÁÙ µðÀÚÀÎÀ» À§ÇØ ºñ¿öµÎ¼¼¿ä.*/
+	content: '';/*comtentì•ˆì€ ë°‘ì¤„ ë””ìžì¸ì„ ìœ„í•´ ë¹„ì›Œë‘ì„¸ìš”.*/
 	border-bottom: solid 3px tomato;
-	transform: scaleX(0);/*Å©±â¸¦ 0À¸·Î ÁÜÀ¸·Î½á Æò»ó½Ã¿£ ¹ØÁÙ ¾øÀ½*/
-	transition: transform 0.3s ease-in-out; /*º¯Çü ¹æ½Ä*/
+	transform: scaleX(0);/*í¬ê¸°ë¥¼ 0ìœ¼ë¡œ ì¤Œìœ¼ë¡œì¨ í‰ìƒì‹œì—” ë°‘ì¤„ ì—†ìŒ*/
+	transition: transform 0.3s ease-in-out; /*ë³€í˜• ë°©ì‹*/
 }
 .menu a.active:after {
-   transform: scaleX(1);/*a ¼Ó¼º¿¡ hover½Ã after¸¦ ±âÁ¸ Å©±â·Î º¯°æ*/
+   transform: scaleX(1);/*a ì†ì„±ì— hoverì‹œ afterë¥¼ ê¸°ì¡´ í¬ê¸°ë¡œ ë³€ê²½*/
 }
 
 
@@ -134,7 +133,7 @@ em > span {
 }
 
 .card {
-	border: 0px;
+	border: 1px;
 }
 
 .card-body {
@@ -143,4 +142,8 @@ em > span {
 
 .card-body>p {
 	text-align: left;
+}
+
+.bg-current-course {
+	background-color: #ccebf5;
 }
