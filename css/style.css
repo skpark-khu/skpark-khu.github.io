@@ -92,7 +92,9 @@ h5 {
 }
 
 .member-image {
-	width: 100%;
+	/* width: 100%; */
+	width: 184px;
+	height: 240px;
 	border: 1px;
 	border-radius: 5px;
 }
