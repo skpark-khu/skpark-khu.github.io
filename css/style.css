@@ -84,6 +84,11 @@ h5 {
 	border-bottom: #ffffff;
 }
 
+span.abbr {
+	font-weight: 900;
+	color: tomato;
+}
+
 .research_image {
 	width: 215px;
 	height: 160px;
