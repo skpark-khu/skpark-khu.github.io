@@ -154,3 +154,7 @@ em > span {
 .bg-current-course {
 	background-color: #ccebf5;
 }
+
+@media ( max-width: 768px ) {
+	.navbar { padding-top: 10px; }
+}
