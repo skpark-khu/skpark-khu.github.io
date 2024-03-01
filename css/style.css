@@ -152,7 +152,11 @@ em > span {
 }
 
 .bg-current-course {
-	background-color: #ccebf5;
+	background-color: #d5eef7;
+}
+
+.abstract {
+	margin-top: 6px;
 }
 
 @media ( max-width: 768px ) {
