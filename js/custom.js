@@ -48,5 +48,57 @@ $(document).ready(function() {
 	$(function() {
 		$('[data-toggle="tooltip"]').tooltip()
 	})
+
+	// ********************
+	// Slido Show
+	// ********************
+	
+	let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    $('.prev').click(function() {
+        plusSlides(-1);
+    });
+
+    $('.next').click(function() {
+        plusSlides(1);
+    });
+
+    // Thumbnail image controls
+    $('.dot').click(function() {
+        let index = $('.dot').index(this) + 1;
+        currentSlide(index);
+    });
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let slides = $(".mySlides");
+        let dots = $(".dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+		
+        slides.each(function(index) {
+            $(this).css("display", "none");
+        });
+
+        dots.each(function() {
+            $(this).removeClass("active");
+        });
+
+        slides.eq(slideIndex - 1).css("display", "block"); // 슬라이드를 보이게 설정
+        dots.eq(slideIndex - 1).addClass("active");
+    }
 	
 });
