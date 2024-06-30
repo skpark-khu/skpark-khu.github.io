@@ -50,7 +50,7 @@ $(document).ready(function() {
 	})
 
 	// ********************
-	// Slido Show
+	// Slido Show: .dot 임시로 비활성화함.
 	// ********************
 	
 	let slideIndex = 1;
