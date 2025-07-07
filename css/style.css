@@ -134,6 +134,11 @@ em > span {
     transform:scale(1.0);
 }
 
+/* 뉴스 숨기기 */
+.hidden {
+	display: none !important;
+}
+
 .research_area>div.card>.card-body {
 	box-shadow: 0 0 20px 0 rgba(100, 100, 100, 0.26);
 	margin: 5px 3px 5px 3px;

@@ -100,5 +100,27 @@ $(document).ready(function() {
         slides.eq(slideIndex - 1).css("display", "block"); // 슬라이드를 보이게 설정
         dots.eq(slideIndex - 1).addClass("active");
     }
+
+	// 뉴스 더보기/숨기기
+	$(function() {
+		var $btn = $('#toggle-news-btn');
+		var $items = $('#news .card-body');
+		var $extra = $items.slice(5);
+
+		// 처음에는 6번째 이후 항목 숨기기
+		$extra.addClass('hidden');
+
+		$btn.on('click', function() {
+			if ($btn.text().trim() === 'Show More') {
+			// Show more → 모두 보이기
+			$extra.removeClass('hidden');
+			$btn.text('Show Less');
+			} else {
+			// Show less → 다시 숨기기
+			$extra.addClass('hidden');
+			$btn.text('Show More');
+			}
+		});
+	});
 	
 });
