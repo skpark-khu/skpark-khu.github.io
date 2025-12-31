@@ -58,6 +58,7 @@ a.navbar-brand {
 	font-weight: 1000;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	padding-right: 12px;
 }
 
 a.nav-link.active {
