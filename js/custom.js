@@ -105,7 +105,8 @@ $(document).ready(function() {
 	$(function() {
 		var $btn = $('#toggle-news-btn');
 		var $items = $('#news .card-body');
-		var $extra = $items.slice(5);
+		var new_limit = 10;
+		var $extra = $items.slice(new_limit);
 
 		// 처음에는 6번째 이후 항목 숨기기
 		$extra.addClass('hidden');
