@@ -27,15 +27,20 @@ $(document).ready(function() {
 
 	});
 	
+	
 	$('.navbar-collapse').collapse('hide');
 
-	$(".nav-link").click(function() {
+	$(".nav-link").click(function(e) {
+		e.preventDefault(); // 기본 앵커 동작 방지
+		
 		$(".nav-link").removeClass("active");
 		$(this).addClass("active");
 
 		$('.navbar-collapse').collapse('hide');
 
 		menu_id = $(this).attr("target-menu");
+		
+		// 클릭한 메뉴 외 다른 모든 메뉴 숨기기
 		$(".menu_template").each(function() {
 			if ($(this).attr("id") == menu_id) {
 				$(this).show();
@@ -43,6 +48,10 @@ $(document).ready(function() {
 				$(this).hide();
 			}
 		});
+		
+		// 페이지 최상단으로 이동
+		window.scrollTo(0, 0);
+		
 	});
 
 	$(function() {
