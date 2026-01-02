@@ -30,8 +30,7 @@ $(document).ready(function() {
 	
 	$('.navbar-collapse').collapse('hide');
 
-	$(".nav-link").click(function(e) {
-		e.preventDefault(); // 기본 앵커 동작 방지
+	$(".nav-link").click(function() {
 		
 		$(".nav-link").removeClass("active");
 		$(this).addClass("active");
